@@ -1,0 +1,29 @@
+// ==============================
+//            FOOTER
+// ==============================
+
+footer {
+  padding-left: em(20px);
+  padding-right: em(20px);
+  padding-bottom: em(20px);
+
+  h2 {
+  font-size: em(30px);
+  font-style: italic;
+  color: $color-text;
+  text-shadow: none;
+  letter-spacing: 1px;
+  }
+
+  p {
+    font-size: em(16px);
+    font-style: italic;
+    text-align: center;
+    color: lighten($color-text, 10%);
+  }
+}
+
+#copyright {
+  font-style: normal;
+  font-size: em(14px);
+}

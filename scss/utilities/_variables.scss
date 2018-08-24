@@ -8,7 +8,9 @@
 $white            : #fff;
 $black            : #0b0b0b;
 $grey             : #797e83;
+$dim-grey         : #666666;
 $bright-gray      : #383d4c;
+$shark            : #262628;
 $fun-green        : #00922b;
 $lochmara         : #0084c4;
 $red-berry        : #910f00;
@@ -17,7 +19,7 @@ $red-berry        : #910f00;
 // Color Usage
 
 $color-primary    : $bright-gray;
-$color-text       : lighten($grey, 12%);
+$color-text       : $dim-grey;
 
 
 // Button Colors
@@ -25,7 +27,9 @@ $color-text       : lighten($grey, 12%);
 $button-colors: (
   green: $fun-green,
   blue: $lochmara,
-  red: $red-berry
+  red: $red-berry,
+  white: $white,
+  black: $shark
 );
 
 // Grid Colors

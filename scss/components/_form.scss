@@ -1,0 +1,70 @@
+// ==============================
+//          FORM
+// ==============================
+
+form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  ::placeholder {
+    color: $black;
+    opacity: 1;
+    font-size: em(22px);
+  }
+}
+
+.contact-section {
+  @include flexify($dir: column, $just: center);
+  margin-top: em(75px);
+  height: em(770px);
+  padding-top: em(40px);
+
+  span {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: $br-default;
+    width: 100%;
+    color: $black;
+    font-size: em(22px);
+    text-align: center;
+    margin-bottom: em(30px);
+    font-weight: $font-weight--light;
+  }
+}
+
+#message {
+  // height: em(130px);
+  padding-bottom: em(100px);
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5px;
+  border-radius: $br-default;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: em(20px);
+  font-weight: $font-weight--light;
+  border: none;
+
+  &:focus {
+    border: 2px solid lighten($lochmara, 25%);
+  }
+}
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

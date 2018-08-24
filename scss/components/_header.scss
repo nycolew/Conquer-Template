@@ -3,12 +3,18 @@
 // ==============================
 
 header {
-  padding-top: 350px;
-  padding-bottom: 350px;
   margin-top: 0;
+  height: em(350px);
+  padding-top: 10px;
 
   span {
     letter-spacing: normal;
     word-spacing: 0.5px;
   }
+
+  @include mq(medium) {
+  height: em(540px);
+  padding-top: em(225px);
+  }
+
 }

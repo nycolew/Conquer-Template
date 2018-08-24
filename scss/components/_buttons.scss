@@ -1,0 +1,49 @@
+// =====================
+//       BUTTONS
+// =====================
+
+.button {
+  @each $item, $color in $button-colors {
+    @include m(#{$item}) {
+      @include button;
+      background-color: $color;
+      margin-bottom: em(20px);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:hover {
+        background-color: lighten($color, 10%);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &--white {
+    color: $grey;
+
+    &:hover {
+      background-color: darken($white, 11%);
+    }
+  }
+
+  &--black {
+    &:hover {
+      background-color: $white;
+      color: $shark;
+      border: 2px solid $shark;
+    }
+  }
+}
+
+.left {
+  margin-left: em(20px);
+  margin-right: auto;
+  width: 50%;
+}
+
+#form-submit {
+  margin-left: initial;
+  margin-right: initial;
+  width: 33%;
+}

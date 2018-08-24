@@ -57,7 +57,10 @@
   .slicknav_nav ul {
     display: block; }
   .slicknav_nav li {
-    display: block; }
+    display: block;
+    border-bottom: 1px solid white; }
+  .slicknav_nav li:last-child {
+    border-bottom: none; }
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
     margin: 0 0 0 0.4em; }
@@ -70,7 +73,9 @@
   .slicknav_nav a {
     display: block; }
   .slicknav_nav .slicknav_parent-link a {
-    display: inline; }
+  /*display: inline;*/
+  display: block;
+  float: right;}
 
 .slicknav_brand {
   float: left; }
@@ -78,7 +83,8 @@
 .slicknav_menu {
   font-size: 16px;
   box-sizing: border-box;
-  background: #4c4c4c;
+  /*background: #4c4c4c;*/
+  background: transparent;
   padding: 5px; }
   .slicknav_menu * {
     box-sizing: border-box; }
@@ -88,6 +94,7 @@
     text-shadow: 0 1px 3px #000; }
   .slicknav_menu .slicknav_icon-bar {
     background-color: #fff; }
+
 
 .slicknav_btn {
   margin: 5px 5px 6px;
@@ -117,7 +124,8 @@
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
-      background: #ccc;
+      /*background: #ccc;*/
+      background: #383d4d;
       color: #fff; }
   .slicknav_nav a {
     padding: 5px 10px;

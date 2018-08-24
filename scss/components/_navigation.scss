@@ -3,6 +3,10 @@
 // =====================================
 
 nav {
+  display: none;
+
+  @include mq(large) {
+  display: block;
   background-color: $color-primary;
   color: $white;
   margin-top: 0;
@@ -38,6 +42,28 @@ nav {
 
     &:visited {
       color: white;
+      }
     }
   }
+}
+
+.slicknav_menu {
+  display: block;
+  position: fixed;
+  margin-left: 86%;
+
+
+  @include mq(large) {
+    display: none;
+  }
+}
+
+// Scroll Up Styling
+
+#scrollUp {
+    background-image: url("../img/top.png");
+    bottom: 20px;
+    right: 20px;
+    width: 38px;    /* Width of image */
+    height: 38px;   /* Height of image */
 }
