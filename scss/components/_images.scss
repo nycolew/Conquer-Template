@@ -3,7 +3,20 @@
 // ===========================
 
 .grid__container--3 {
-  img {
-  max-height: em(140px);
+
+}
+
+.grid__container {
+  &--1 {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &--3 {
+    img {
+    max-height: em(140px);
+    }
   }
 }

@@ -5,18 +5,22 @@
 nav {
   display: none;
 
-  @include mq(large) {
+  @include mq(medium) {
   display: block;
   background-color: $color-primary;
   color: $white;
   margin-top: 0;
   margin-bottom: 0;
   font-family: $font-family--primary;
-  font-size: em(26px);
+  font-size: em(22px);
   font-weight: 310;
   width: 100%;
   height: em(75px);
   position: fixed;
+
+  @include mq(large) {
+    font-size: em(26px);
+  }
 
   ul {
     @include flexify($just: center);
@@ -29,6 +33,7 @@ nav {
       margin-left: 8px;
       margin-right: 8px;
       padding: 10px 25px;
+      cursor: pointer;
 
       &:hover {
         background-color: lighten($color-primary, 10%);
@@ -56,6 +61,11 @@ nav {
   @include mq(large) {
     display: none;
   }
+}
+
+.active {
+  background: #858a9a;
+  color: #fff;
 }
 
 // Scroll Up Styling

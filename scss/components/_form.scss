@@ -37,7 +37,6 @@ form {
 }
 
 #message {
-  // height: em(130px);
   padding-bottom: em(100px);
 }
 
@@ -56,6 +55,10 @@ input {
   &:focus {
     border: 2px solid lighten($lochmara, 25%);
   }
+
+  @include mq(medium) {
+    display: inline;
+  }
 }
 
 .srt {
@@ -67,4 +70,11 @@ input {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.fields-container {
+    @include mq(medium) {
+    @include flexify($dir: row, $just: space-around);
+    width: 100%;
+  }
 }
