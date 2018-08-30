@@ -1,13 +1,34 @@
-// const navigation = document.getElementById('menu');
-// const links = navigation.getElementsByTagName('li');
-//
-// for (let i = 0; i < links.length; i += 1) {
-//   links[0].addEventListener('click', (e) => {
-//     let current = document.getElementsByClassName('active');
-//     current[0].className.replace('active', '');
-//     e.target.className += 'active';
-//   })
-// }
+
+// Set up mobile navigation
+
+$(function(){
+  $('#menu').slicknav({
+    label: '',
+    easingOpen: 'linear',
+    easingClose: 'linear',
+    duration: 400
+  });
+});
+
+// Set up scroll to top functionality
+
+$(function(){
+$.scrollUp({
+  scrollText: ''
+});
+});
+
+// Set up parallax scroll effect
+
+$('.header-section').parallax({
+  imageSrc: 'img/bg-1.jpg'
+  });
+$('.services-section').parallax({
+  imageSrc: 'img/bg-2.jpg'
+});
+$('.contact-section').parallax({
+  imageSrc: 'img/bg-3.jpg'
+});
 
 
 // Add 'active' class to current element (not working)
