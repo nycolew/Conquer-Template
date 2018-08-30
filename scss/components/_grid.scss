@@ -14,10 +14,33 @@
     max-width: 90%;
 
     .grid-row {
+
+      margin-bottom: em(75px);
+
       @include mq(medium) {
         @include flexify($dir: row, $just: space-between);
       }
+
+      @include mq(large) {
+        @include flexify($dir: row, $just: space-around);
+      }
     }
+
+    .card {
+
+      @include mq(medium) {
+      margin: em(8px);
+      }
+
+      @include mq(large) {
+        margin: em(15px);
+      }
+    }
+
+    @include mq(large) {
+      max-width: 90%;
+    }
+
   }
 
   &--2 {
@@ -28,12 +51,16 @@
 
     @include mq(medium) {
       @include flexify($dir: column, $just: space-around);
-      max-width: 95%;
+      max-width: 90%;
 
       img {
         max-width: 100%;
         height: auto;
       }
+    }
+
+    @include mq(large) {
+      @include flexify($dir: row, $just: center);
     }
   }
 
@@ -46,6 +73,15 @@
     span {
       margin-bottom: em(20px);
     }
+
+    img {
+      width: auto;
+      height: auto;
+    }
+
+    @include mq(large) {
+      max-width: 90%;
+    }
   }
 }
 
@@ -57,7 +93,7 @@
 }
 
 .card {
-  @include flexify($dir: column, $just: center);
+  @include flexify($dir: column, $just: flex-start);
   background-color: darken($white, 5%);
   padding-top: 0;
   margin-bottom: em(25px);
@@ -68,6 +104,8 @@
 
   img {
     margin-top: 0;
+    max-width: 100%;
+    height: auto;
   }
 
   p {
@@ -86,12 +124,28 @@
       text-decoration: none;
       color: $fun-green;
     }
+
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(medium) {
+      max-width: none;
+    }
   }
 
   &--2 {
     a {
       text-decoration: none;
       color: $lochmara;
+    }
+
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(medium) {
+      max-width: none;
     }
 
     @include mq(medium) {
@@ -105,10 +159,24 @@
       text-decoration: none;
       color: $red-berry;
     }
+
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(medium) {
+      max-width: none;
+    }
   }
 
   @include mq(medium) {
-    width: em(360px);
+    //@include flexify($dir: column, $just: flex-start);
+    //width: em(360px);
+    width: 100%;
+  }
+
+  @include mq(large) {
+    width: 100%;
   }
 }
 

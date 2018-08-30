@@ -17,6 +17,10 @@
   &--3 {
     img {
     max-height: em(140px);
+
+    @include mq(medium) {
+      max-height: none;
+    }
     }
   }
 }

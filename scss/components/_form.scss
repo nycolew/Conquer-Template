@@ -13,6 +13,10 @@ form {
     opacity: 1;
     font-size: em(22px);
   }
+
+  @include mq(large) {
+    width: 60%;
+  }
 }
 
 .contact-section {
@@ -27,7 +31,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     border-radius: $br-default;
-    width: 100%;
+    width: 95%;
     color: $black;
     font-size: em(22px);
     text-align: center;
@@ -75,6 +79,17 @@ input {
 .fields-container {
     @include mq(medium) {
     @include flexify($dir: row, $just: space-around);
-    width: 100%;
+  }
+}
+
+.form {
+  @include mq(medium) {
+    &--1 {
+      width: 45%;
+    }
+
+    &--2 {
+      width: 45%;
+    }
   }
 }
