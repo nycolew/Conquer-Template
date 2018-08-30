@@ -24,6 +24,7 @@ $("#menu li").click(function () {
 
 $(document).ready(function() {
   $("a").on('click', function(event) {
+    if (event.target.hasAttribute('target')) return;
     if (this.has !== "") {
       event.preventDefault();
       let hash = this.hash;

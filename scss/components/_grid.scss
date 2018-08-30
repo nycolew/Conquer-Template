@@ -125,10 +125,11 @@
       color: $fun-green;
     }
 
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-
+    @include mq(moderate) {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     @include mq(medium) {
       max-width: none;
     }
@@ -140,9 +141,11 @@
       color: $lochmara;
     }
 
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    @include mq(moderate) {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     @include mq(medium) {
       max-width: none;
@@ -160,10 +163,12 @@
       color: $red-berry;
     }
 
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-
+    @include mq(moderate) {
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
     @include mq(medium) {
       max-width: none;
     }

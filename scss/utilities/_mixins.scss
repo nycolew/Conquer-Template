@@ -27,6 +27,12 @@
     }
   }
 
+  @if $break == "moderate" {
+    @media(min-width: $brkpoint-smmd) {
+      @content;
+    }
+  }
+
   @else if $break == "medium" {
     @media(min-width: $brkpoint-md + 1) {
       @content;
